@@ -11,7 +11,7 @@ const AboutSection = () => {
         <AnimatedSection>
           <h2 className="section-title">Sobre Nós</h2>
           <p className="section-subtitle">
-            Vasta experiência em serviços contábeis e imobiliários em toda região Sul e restante do Brasil
+            Nossa jornada de transformação e crescimento no mercado empresarial
           </p>
         </AnimatedSection>
 
@@ -21,7 +21,7 @@ const AboutSection = () => {
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  alt="Equipe do Escritório Contábil De Grandi" 
+                  alt="Equipe do Cont ADM Assessoria Empresarial" 
                   className="w-full h-auto" 
                   src="https://i.pinimg.com/1200x/80/eb/5a/80eb5aa736bff707aad224866c98880e.jpg" 
                 />
@@ -32,23 +32,23 @@ const AboutSection = () => {
           <AnimatedSection animation="fade-in-up" className="space-y-8">
             <div className="space-y-6">
               <div>
-                <h3 className="heading-4 text-white mb-4">Sobre Nós</h3>
+                <h3 className="heading-4 text-white mb-4">Nossa História - 2018</h3>
                 <p className="body-large text-white">
-                  O Escritório De Grandi possui vasta experiência em serviços contábeis e na área de compra e venda de imóveis, sendo pioneiro em diversos segmentos de prestação de serviço ao cliente. Conta atualmente com atendimento na cidade de Viadutos/RS e também na cidade de Gaurama/RS, proporcionando aos clientes maior comodidade e acesso aos serviços oferecidos.
+                  Em 2018, olhando para o futuro e estimando onde estar a 5 anos, foi decidido que uma empresa de Representação Comercial mudaria seu ramo econômico e se transformaria em uma empresa focada tecnicamente em outras empresas. Foi quando tivemos um primeiro contato com serviço de revisão fiscal, foco nas empresas do simples nacional, o que acabou despertando interesse para desenvolver a gestão empresarial e contabilidade.
                 </p>
               </div>
 
               <div>
-                <h3 className="heading-4 text-white mb-4">Atuação</h3>
+                <h3 className="heading-4 text-white mb-4">Expansão - 2020</h3>
                 <p className="body-large text-white">
-                  Atuamos principalmente na prestação de serviços para a população de toda região Sul, mas também atendemos o restante do Brasil. Nossa equipe é treinada e qualificada, contando com profissionais formados nas áreas Contábil, de Administração de Empresas, Corretor de Imóveis e Avaliador Federal de Imóveis. Possuímos excelente consultoria e dispomos de diversos meios de informação sobre rotinas Contábeis, Trabalhistas e Tributárias.
+                  Em 2020 passamos a representar uma empresa de gestão empresarial, em pleno período de pandemia começamos a ajudar empresas a melhorarem seus resultados fazendo organização total do seu estabelecimento.
                 </p>
               </div>
 
               <div>
-                <h3 className="heading-4 text-white mb-4">Diferencial</h3>
+                <h3 className="heading-4 text-white mb-4">Consolidação - 2021</h3>
                 <p className="body-large text-white">
-                  Qualidade nos serviços prestados e responsabilidade sempre foram nosso diferencial, além de uma vasta gama de serviços que prestamos aos nossos clientes, visando sempre a satisfação e resolutividade dos problemas que afetam as pessoas e as empresas no dia a dia.
+                  Ao final de 2021 veio a próxima etapa desta empreitada que foi a aprovação do conselho federal de contabilidade e abertura de uma empresa contábil. Agora nosso foco passa a ser também a contabilidade de empresas, sempre pensando na organização da gestão empresarial e sua correlação aos processos contábeis, deixando a informação mais enxuta possível.
                 </p>
               </div>
             </div>
