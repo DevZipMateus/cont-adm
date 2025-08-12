@@ -40,7 +40,7 @@ const CTAButtons = () => {
                 </h2>
               </div>
               <p className="text-white/90 text-center sm:text-left text-sm sm:text-base md:text-lg leading-relaxed">
-                Já possui empresa e precisa de serviços contábeis? Fale conosco para uma consultoria.
+                Temos uma equipe super preparada para cuidar da sua contabilidade.
               </p>
               <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
