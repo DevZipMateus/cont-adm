@@ -13,6 +13,19 @@ const Footer = () => {
           />
         </div>
 
+        <div className="text-center mb-8">
+          <div className="space-y-2">
+            <div className="flex items-center justify-center gap-2 text-gray-300">
+              <Phone className="h-4 w-4" />
+              <span className="text-sm sm:text-base">Telefone: (12) 9.8214-7656</span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-gray-300">
+              <Phone className="h-4 w-4" />
+              <span className="text-sm sm:text-base">WhatsApp: (12) 9.8214-7656</span>
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center">
           <p className="text-gray-400 text-sm sm:text-base">
             © 2025 Cont ADM Assessoria Empresarial. Todos os direitos reservados. Desenvolvido por MonteSite.
