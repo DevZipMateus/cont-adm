@@ -1,5 +1,7 @@
+
 import { ExternalLink, Globe, FileText, Calculator, Users, Building, Receipt, Shield, Scale } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
+
 const UsefulLinksSection = () => {
   const links = [{
     icon: Calculator,
@@ -47,7 +49,9 @@ const UsefulLinksSection = () => {
     description: "Acesse o Portal com informações",
     url: "https://www.gov.br/agu/pt-br"
   }];
-  return <section id="links-uteis" className="spacing-section bg-gray-50">
+
+  return (
+    <section id="links-uteis" className="spacing-section bg-gray-50">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-zinc-950">Links Úteis</h2>
@@ -58,15 +62,21 @@ const UsefulLinksSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {links.map((link, index) => {
-          const IconComponent = link.icon;
-          return <AnimatedSection key={link.title} animation="fade-in-up" delay={index * 100}>
-                <a href={link.url} target="_blank" rel="noopener noreferrer" className="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group block">
+            const IconComponent = link.icon;
+            return (
+              <AnimatedSection key={link.title} animation="fade-in-up" delay={index * 100}>
+                <a 
+                  href={link.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group block"
+                >
                   <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                     <IconComponent className="h-7 w-7 text-primary" />
                   </div>
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+                      <h3 className="text-lg font-bold mb-2 text-zinc-950 group-hover:text-primary transition-colors">
                         {link.title}
                       </h3>
                       <p className="text-gray-600 text-sm leading-relaxed">
@@ -76,10 +86,13 @@ const UsefulLinksSection = () => {
                     <ExternalLink className="h-4 w-4 text-gray-400 group-hover:text-primary transition-colors flex-shrink-0 mt-1" />
                   </div>
                 </a>
-              </AnimatedSection>;
-        })}
+              </AnimatedSection>
+            );
+          })}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default UsefulLinksSection;
