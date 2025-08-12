@@ -1,73 +1,59 @@
 
-import { Building, Users, Calculator, FileText, UserCheck, Briefcase, Home, Landmark, Truck, Shield, DollarSign, TreePine, Building2 } from 'lucide-react';
+import { Calculator, FileText, Building, DollarSign, Shield, Settings } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Building,
-      title: "Condomínios",
-      description: "Ajudamos sua empresa a implementar novas soluções na gestão de pessoas, proporcionando eficiência e controle adequado dos processos administrativos."
-    },
-    {
-      icon: Users,
-      title: "Consultoria", 
-      description: "Prestamos assessoria a pessoas físicas e jurídicas sobre questões tributárias, legislação empresarial, tributária (IRPJ, ICMS, PIS COFINS, IPI, ITR) e trabalhista (INSS, FGTS e MTb), garantindo compliance e otimização fiscal."
-    },
-    {
       icon: Calculator,
-      title: "Contabilidade",
-      description: "A escrituração contábil é planejada e executada de acordo com as Normas Internacionais de Contabilidade – IFRS, adequadas à individualidade de cada empresa e às características das atividades desenvolvidas, assegurando precisão e conformidade."
+      title: "Assessoria Contábil",
+      description: "Realizamos consultoria, assessoria e execução, em nossas dependências ou nas instalações do cliente, de serviços de contabilidade.",
+      details: [
+        "Escrituração contábil convencional",
+        "Levantamento de Balancetes e outros relatórios contábeis",
+        "Elaboração das demonstrações contábeis",
+        "Análise das demonstrações contábeis",
+        "Consolidação de demonstrações contábeis",
+        "Emissão dos Livros Contábeis, seja na forma convencional ou digital",
+        "Atendimento às obrigações vinculadas ao SPED (Escrituração Contábil Digital)"
+      ]
     },
     {
       icon: FileText,
-      title: "Legalização de Empresas",
-      description: "Neste setor são elaborados instrumentos de constituição de empresas, tais como contrato social e atas, alterações de contratos, baixa de empresas, serviços de parcelamento de impostos, certidões e serviços auxiliares junto a todos os órgãos públicos."
+      title: "Assessoria Fiscal e Tributária",
+      description: "Realizamos consultoria, assessoria e execução, em nossas dependências ou nas instalações do cliente, de serviços vinculados à área fiscal e tributária.",
+      details: [
+        "Escrituração fiscal convencional",
+        "Cálculos e apurações de tributos federais, estaduais e municipais",
+        "Escrituração Fiscal Digital (EFD) – ICMS e IPI",
+        "Escrituração Fiscal Digital (EFD) Contribuições – PIS e COFINS",
+        "Escrituração Contábil Fiscal (ECF)",
+        "Consultoria fiscal e tributária",
+        "Verificação de ativos e passivos tributários",
+        "Recuperação de créditos fiscais",
+        "Planejamento tributário",
+        "Análises e pareceres de autos de infração para fins de defesas fiscais"
+      ]
     },
     {
-      icon: UserCheck,
-      title: "Recursos Humanos",
-      description: "Abrange todos os serviços relacionados à folha de pagamento e manutenção do cadastro de funcionários, assim como registro dos funcionários, de forma integrada e em conformidade com a legislação trabalhista vigente."
-    },
-    {
-      icon: Briefcase,
-      title: "Serviços Contábeis",
-      description: "Com amplo conhecimento na área empresarial, contamos com uma excelente equipe de consultores para melhor atendê-los, independente de qual seja a sua necessidade, oferecendo soluções personalizadas e eficazes."
-    },
-    {
-      icon: Building2,
-      title: "Serviço de Regularização de Obras e Construção",
-      description: "Oferecemos assessoria completa para regularização de obras e construções, incluindo documentação necessária, alvará de construção, habite-se e demais procedimentos junto aos órgãos competentes."
-    },
-    {
-      icon: Landmark,
-      title: "Orientação Empresarial",
-      description: "Prestamos orientação estratégica para empresas em diversas áreas, incluindo planejamento tributário, gestão financeira, adequação legal e otimização de processos para o crescimento sustentável do negócio."
-    },
-    {
-      icon: TreePine,
-      title: "Nota Eletrônica para Produtor Rural",
-      description: "Auxiliamos produtores rurais na implementação e gestão de notas eletrônicas, garantindo conformidade fiscal e facilitando a comercialização de produtos agropecuários."
-    },
-    {
-      icon: Home,
-      title: "Imposto de Renda Pessoa Física",
-      description: "Prestamos serviços completos de declaração de imposto de renda para pessoas físicas, incluindo análise de deduções, otimização fiscal e acompanhamento junto à Receita Federal."
+      icon: Building,
+      title: "Gestão Empresarial",
+      description: "Oferecemos os melhores sistemas de gestão empresarial do mercado, além disso fazemos consultoria diretamente no sistema em seu estabelecimento."
     },
     {
       icon: DollarSign,
-      title: "Financiamento Habitacional",
-      description: "Oferecemos consultoria e assessoria para obtenção de financiamento habitacional, auxiliando na análise de condições, documentação necessária e acompanhamento do processo junto a bancos e instituições financeiras para a aquisição da casa própria."
-    },
-    {
-      icon: Truck,
-      title: "ANTT para Transportadores de Carga e Pessoas",
-      description: "Prestamos serviços completos para registro e regularização junto à ANTT (Agência Nacional de Transportes Terrestres), incluindo licenciamento de transportadores de carga e passageiros."
+      title: "Imposto de Renda",
+      description: "Fazemos parte da maior comunidade de especialistas de imposto de renda do Brasil. Além deste serviço, orientamos autônomos que precisam organizar seus recebimentos e declarar ao carnê leão."
     },
     {
       icon: Shield,
-      title: "Emissão de Certificados Digital",
-      description: "Facilitamos a emissão de certificados digitais A1 e A3 para pessoas físicas e jurídicas, proporcionando segurança nas transações eletrônicas e assinatura digital de documentos."
+      title: "Recuperação de Créditos Tributários e Previdenciários",
+      description: "Trabalhamos para identificar e criar soluções legais de resgates de impostos para efeito de recuperação de crédito, com a imediata e considerável redução na carga tributária de sua empresa."
+    },
+    {
+      icon: Settings,
+      title: "Parametrização Fiscal",
+      description: "Parametrização fiscal é ajustar o seu banco de dados do estoque com informações atualizadas e aplicando a legislação em vigor. Além de aplicar corretamente as informações fiscais, é possível também reduzir custos com impostos. As informações parametrizadas são: NCM, CFOP, CSOSN, alíquotas, códigos tributários entre outros."
     }
   ];
 
@@ -96,7 +82,21 @@ const ServicesSection = () => {
                     <IconComponent className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                   </div>
                   <h3 className="heading-4 text-gray-900 mb-3 md:mb-4">{service.title}</h3>
-                  <p className="body-medium text-gray-600 paragraph-justified">{service.description}</p>
+                  <p className="body-medium text-gray-600 paragraph-justified mb-4">{service.description}</p>
+                  
+                  {service.details && (
+                    <div className="mt-4">
+                      <h4 className="text-sm font-semibold text-gray-800 mb-2">Detalhes:</h4>
+                      <ul className="text-xs text-gray-600 space-y-1">
+                        {service.details.map((detail, detailIndex) => (
+                          <li key={detailIndex} className="flex items-start">
+                            <span className="text-primary mr-2 mt-1">•</span>
+                            <span>{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </AnimatedSection>
             );
