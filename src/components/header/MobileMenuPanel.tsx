@@ -39,7 +39,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
     >
       {/* Menu Header */}
       <div className="flex items-center justify-between p-3 sm:p-4 lg:p-6 border-b">
-        <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">De Grandi</div>
+        <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">Cont ADM</div>
         <button 
           onClick={onClose}
           className="p-1.5 sm:p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors"

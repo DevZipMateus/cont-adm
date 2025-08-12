@@ -37,8 +37,8 @@ const Index = () => {
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      'name': 'Escritório Contábil De Grandi Ltda',
-      'description': 'Escritório de contabilidade em Gaurama/RS oferecendo serviços contábeis completos para empresas e pessoas físicas.',
+      'name': 'Cont ADM Assessoria Empresarial',
+      'description': 'Assessoria empresarial especializada em Gaurama/RS oferecendo serviços contábeis completos para empresas e pessoas físicas.',
       'address': {
         '@type': 'PostalAddress',
         'streetAddress': 'Rua João Amândio Sperb, 229, Sala 106',

@@ -29,11 +29,11 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-16 items-center">
           <AnimatedSection animation="fade-in-up" className="text-left order-2 lg:order-1">
             <h1 className="heading-1 mb-4 sm:mb-6 text-gray-900 font-sans font-bold">
-              Escritório Contábil <span className="text-gray-800 whitespace-nowrap">De Grandi</span>
+              Cont ADM <span className="text-gray-800 whitespace-nowrap">Assessoria Empresarial</span>
             </h1>
             
             <p className="body-large text-gray-700 mb-6 sm:mb-8">
-              Serviços contábeis completos e especializados. Cuidamos da contabilidade da sua empresa com excelência, segurança e tradição comprovada há mais de 40 anos no mercado.
+              Assessoria empresarial especializada e serviços contábeis completos. Cuidamos da contabilidade da sua empresa com excelência, segurança e tradição comprovada há mais de 40 anos no mercado.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 md:mb-10">
@@ -88,7 +88,7 @@ const HeroSection = () => {
               <div className="absolute -top-6 sm:-top-12 -left-6 sm:-left-12 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
                 <img 
-                  alt="Escritório Contábil De Grandi - Serviços profissionais de contabilidade" 
+                  alt="Cont ADM Assessoria Empresarial - Serviços profissionais de contabilidade" 
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" 
                   src="/lovable-uploads/010900fe-8304-457a-9438-4f38f6a3059c.png" 
                 />

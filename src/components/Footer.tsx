@@ -9,12 +9,12 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img 
-              src="/lovable-uploads/c2cc8633-a51b-4fe0-b8d0-338ec56dd30b.png" 
-              alt="Escritório Contábil De Grandi" 
+              src="/lovable-uploads/d3133fad-f083-4b24-a087-bf3356e5a89c.png" 
+              alt="Cont ADM Assessoria Empresarial" 
               className="h-24 mb-3 sm:mb-4 brightness-0 invert" 
             />
             <p className="text-gray-300 mb-3 sm:mb-4 max-w-md text-sm sm:text-base">
-              Escritório de contabilidade oferecendo serviços contábeis completos 
+              Assessoria empresarial especializada oferecendo serviços contábeis completos 
               com excelência e tradição no mercado há mais de 40 anos.
             </p>
           </div>
@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
           <p className="text-gray-400 text-sm sm:text-base">
-            © 2025 Escritório Contábil De Grandi Ltda. Todos os direitos reservados. Desenvolvido por MonteSite.
+            © 2025 Cont ADM Assessoria Empresarial. Todos os direitos reservados. Desenvolvido por MonteSite.
           </p>
         </div>
       </div>
