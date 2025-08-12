@@ -18,11 +18,11 @@ const CTAButtons = () => {
                   <Building2 className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center sm:text-left">
-                  Abrir Empresa
+                  Quero saber sobre recuperação de créditos
                 </h2>
               </div>
               <p className="text-white/90 text-center sm:text-left text-sm sm:text-base md:text-lg leading-relaxed">
-                Precisa abrir uma nova empresa? Nossa equipe te ajuda em todo o processo de abertura.
+                Evite dor de cabeça, conte com nosso apoio e siga os passos certos.
               </p>
               <div className="absolute inset-0 bg-gradient-to-r from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
