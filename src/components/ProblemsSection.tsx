@@ -23,7 +23,7 @@ const ProblemsSection = () => {
   ];
 
   return (
-    <section id="problemas" className="py-24">
+    <section id="problemas" className="py-24 bg-secondary">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Isso soa familiar?</h2>

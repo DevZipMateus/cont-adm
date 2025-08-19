@@ -54,7 +54,7 @@ const CTAButtons = () => {
                       <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
                         <IconComponent className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-white" />
                       </div>
-                      <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center leading-tight">
+                      <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-center leading-tight text-white">
                         {service.title}
                       </h2>
                     </div>

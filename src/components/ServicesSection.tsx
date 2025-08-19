@@ -58,7 +58,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="servicos" className="py-16 sm:py-20 md:py-24 lg:py-28">
+    <section id="servicos" className="py-16 sm:py-20 md:py-24 lg:py-28 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <AnimatedSection>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 sm:mb-6 text-white">

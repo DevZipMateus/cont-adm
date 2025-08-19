@@ -9,8 +9,8 @@ const AboutSection = () => {
     }}>
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Sobre Nós</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title text-gray-900">Sobre Nós</h2>
+          <p className="section-subtitle text-gray-700">
             Nossa jornada de transformação e crescimento no mercado empresarial
           </p>
         </AnimatedSection>
@@ -32,22 +32,22 @@ const AboutSection = () => {
           <AnimatedSection animation="fade-in-up" className="space-y-8">
             <div className="space-y-6">
               <div>
-                <h3 className="heading-4 text-white mb-4">Nossa História - 2018</h3>
-                <p className="body-large text-white">
+                <h3 className="heading-4 text-gray-900 mb-4">Nossa História - 2018</h3>
+                <p className="body-large text-gray-700">
                   Em 2018, olhando para o futuro e estimando onde estar a 5 anos, foi decidido que uma empresa de Representação Comercial mudaria seu ramo econômico e se transformaria em uma empresa focada tecnicamente em outras empresas. Foi quando tivemos um primeiro contato com serviço de revisão fiscal, foco nas empresas do simples nacional, o que acabou despertando interesse para desenvolver a gestão empresarial e contabilidade.
                 </p>
               </div>
 
               <div>
-                <h3 className="heading-4 text-white mb-4">Expansão - 2020</h3>
-                <p className="body-large text-white">
+                <h3 className="heading-4 text-gray-900 mb-4">Expansão - 2020</h3>
+                <p className="body-large text-gray-700">
                   Em 2020 passamos a representar uma empresa de gestão empresarial, em pleno período de pandemia começamos a ajudar empresas a melhorarem seus resultados fazendo organização total do seu estabelecimento.
                 </p>
               </div>
 
               <div>
-                <h3 className="heading-4 text-white mb-4">Consolidação - 2021</h3>
-                <p className="body-large text-white">
+                <h3 className="heading-4 text-gray-900 mb-4">Consolidação - 2021</h3>
+                <p className="body-large text-gray-700">
                   Ao final de 2021 veio a próxima etapa desta empreitada que foi a aprovação do conselho federal de contabilidade e abertura de uma empresa contábil. Agora nosso foco passa a ser também a contabilidade de empresas, sempre pensando na organização da gestão empresarial e sua correlação aos processos contábeis, deixando a informação mais enxuta possível.
                 </p>
               </div>
@@ -56,41 +56,41 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="flex items-start gap-3">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Award className="h-6 w-6 text-white" />
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="heading-4 text-white mb-2">Nosso Negócio</h3>
-                  <p className="body-medium text-white/90">Prestar serviços confiáveis com qualidade, seriedade e segurança</p>
+                  <h3 className="heading-4 text-gray-900 mb-2">Nosso Negócio</h3>
+                  <p className="body-medium text-gray-700">Prestar serviços confiáveis com qualidade, seriedade e segurança</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Shield className="h-6 w-6 text-white" />
+                  <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="heading-4 text-white mb-2">Nossa Missão</h3>
-                  <p className="body-medium text-white/90">Garantir os melhores serviços e soluções com conhecimento e tecnologia</p>
+                  <h3 className="heading-4 text-gray-900 mb-2">Nossa Missão</h3>
+                  <p className="body-medium text-gray-700">Garantir os melhores serviços e soluções com conhecimento e tecnologia</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-white" />
+                  <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="heading-4 text-white mb-2">Nossos Princípios</h3>
-                  <p className="body-medium text-white/90">Confiança, qualidade, inovação e relacionamentos duradouros</p>
+                  <h3 className="heading-4 text-gray-900 mb-2">Nossos Princípios</h3>
+                  <p className="body-medium text-gray-700">Confiança, qualidade, inovação e relacionamentos duradouros</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="h-6 w-6 text-white" />
+                  <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="heading-4 text-white mb-2">Nossa Visão</h3>
-                  <p className="body-medium text-white/90">Crescer junto com nossos clientes e com toda a comunidade</p>
+                  <h3 className="heading-4 text-gray-900 mb-2">Nossa Visão</h3>
+                  <p className="body-medium text-gray-700">Crescer junto com nossos clientes e com toda a comunidade</p>
                 </div>
               </div>
             </div>

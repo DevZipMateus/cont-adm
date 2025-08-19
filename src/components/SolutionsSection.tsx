@@ -32,7 +32,7 @@ const SolutionsSection = () => {
   ];
 
   return (
-    <section id="solucoes" className="py-24">
+    <section id="solucoes" className="py-24 bg-secondary">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title text-white">Mais que relatórios. Entregamos resultados.</h2>
@@ -53,7 +53,7 @@ const SolutionsSection = () => {
               >
                 <div className="card-feature">
                   <div className="w-14 h-14 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
-                    <IconComponent className="h-7 w-7 text-white" />
+                    <IconComponent className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">{solution.title}</h3>
                   <p className="text-gray-600 paragraph-justified">{solution.description}</p>
