@@ -107,16 +107,18 @@ const TestimonialsSection = () => {
   }, [api]);
 
   return (
-    <section id="depoimentos" className="py-24" style={{ background: 'hsl(var(--section-bg))' }}>
-      <div className="section-container">
+    <section id="depoimentos" className="py-16 sm:py-20 md:py-24 lg:py-28" style={{ background: 'hsl(var(--section-bg))' }}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <AnimatedSection>
-          <h2 className="section-title">Depoimentos</h2>
-          <p className="section-subtitle">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 sm:mb-6">
+            Depoimentos
+          </h2>
+          <p className="text-lg sm:text-xl md:text-2xl text-center max-w-4xl mx-auto">
             Veja o que nossos clientes dizem sobre nossos serviços
           </p>
         </AnimatedSection>
 
-        <div className="mt-12 max-w-4xl mx-auto">
+        <div className="mt-12 sm:mt-16 md:mt-20 max-w-6xl mx-auto">
           <Carousel
             setApi={setApi}
             opts={{
@@ -125,37 +127,41 @@ const TestimonialsSection = () => {
             }}
             className="w-full"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={`${testimonial.name}-${index}`} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={`${testimonial.name}-${index}`} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <AnimatedSection 
                     animation="fade-in-up" 
                     delay={index * 50}
                   >
-                    <div className="testimonial-card h-full">
-                      <div className="flex items-center gap-1 mb-4">
+                    <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full flex flex-col min-h-[300px] sm:min-h-[350px] md:min-h-[400px]">
+                      <div className="flex items-center gap-1 mb-4 sm:mb-6">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
                       
-                      <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                      <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 mb-4 sm:mb-6 flex-shrink-0" />
                       
-                      <p className="body-medium text-gray-700 mb-6 italic">
+                      <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 italic leading-relaxed flex-grow">
                         "{testimonial.content}"
                       </p>
                       
-                      <div className="border-t pt-4">
-                        <h4 className="heading-4 text-gray-900">{testimonial.name}</h4>
-                        <p className="body-small text-gray-600">{testimonial.company}</p>
+                      <div className="border-t pt-4 sm:pt-6 mt-auto">
+                        <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-sm sm:text-base text-gray-600">
+                          {testimonial.company}
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="hidden md:flex -left-12 lg:-left-16" />
+            <CarouselNext className="hidden md:flex -right-12 lg:-right-16" />
           </Carousel>
         </div>
       </div>

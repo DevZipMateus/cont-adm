@@ -47,10 +47,10 @@ const Header = () => {
     <>
       <header className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg py-0.5 sm:py-1' 
-          : 'py-1 sm:py-1.5 md:py-2 bg-white/90'
+          ? 'bg-white/95 backdrop-blur-sm shadow-lg py-2 md:py-3' 
+          : 'py-3 md:py-4 lg:py-5 bg-white/90'
       }`}>
-        <div className="section-container flex justify-between items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center max-w-7xl">
           <Logo />
           <DesktopNavigation menuItems={menuItems} scrolled={scrolled} />
           <MobileMenuButton 
