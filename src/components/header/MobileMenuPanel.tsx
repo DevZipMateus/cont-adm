@@ -11,6 +11,8 @@ interface MobileMenuPanelProps {
 }
 
 const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProps) => {
+  const phoneNumber = "12982147656";
+  
   const handleAnchorClick = (href: string) => {
     if (href.startsWith('/#')) {
       const targetId = href.substring(2);
@@ -26,6 +28,13 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
         }
       }
     }
+    onClose();
+  };
+
+  const handleWhatsAppClick = () => {
+    const message = "Olá! Gostaria de entrar em contato com o Escritório De Grandi para mais informações sobre os serviços contábeis.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
     onClose();
   };
 
@@ -54,13 +63,23 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
         <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
           {menuItems.map((item) => (
             <li key={item.name}>
-              {item.href.startsWith('/') && !item.href.startsWith('/#') ? (
+              {item.name === 'Contato' ? (
+                <button
+                  onClick={handleWhatsAppClick}
+                  className={cn(
+                    "text-base sm:text-lg lg:text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 sm:py-2.5 w-full text-left",
+                    "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3",
+                    'bg-primary !text-white hover:bg-primary/90 hover:!text-white'
+                  )}
+                >
+                  {item.name}
+                </button>
+              ) : item.href.startsWith('/') && !item.href.startsWith('/#') ? (
                 <Link
                   to={item.href}
                   className={cn(
                     "text-base sm:text-lg lg:text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 sm:py-2.5",
-                    "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3",
-                    item.name === 'Contato' && 'bg-primary !text-white hover:bg-primary/90 hover:!text-white'
+                    "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3"
                   )}
                   onClick={onClose}
                 >
@@ -71,8 +90,7 @@ const MobileMenuPanel = ({ isMenuOpen, onClose, menuItems }: MobileMenuPanelProp
                   href={item.href}
                   className={cn(
                     "text-base sm:text-lg lg:text-xl font-medium text-gray-800 hover:text-primary transition-all duration-200 block py-2 sm:py-2.5",
-                    "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3",
-                    item.name === 'Contato' && 'bg-primary !text-white hover:bg-primary/90 hover:!text-white'
+                    "hover:translate-x-1 hover:scale-[1.02] focus:outline-none focus:text-primary rounded-md px-2 sm:px-3"
                   )}
                   onClick={(e) => {
                     if (item.href.startsWith('/#')) {
