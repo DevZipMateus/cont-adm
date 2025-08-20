@@ -1,5 +1,5 @@
 
-import { CheckCircle, Award, Clock, Shield } from 'lucide-react';
+import { CheckCircle, Award, Clock, Shield, Target, Eye } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const AboutSection = () => {
@@ -60,50 +60,134 @@ const AboutSection = () => {
                 </p>
               </div>
             </div>
+          </AnimatedSection>
+        </div>
+
+        {/* Nova seção de Missão, Visão e Valores */}
+        <AnimatedSection className="mt-16 sm:mt-20 md:mt-24">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Award className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nosso Negócio</h3>
-                  <p className="text-sm sm:text-base text-gray-700">Prestar serviços confiáveis com qualidade, seriedade e segurança</p>
-                </div>
+            {/* Missão */}
+            <div className="text-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Target className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
               </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nossa Missão</h3>
-                  <p className="text-sm sm:text-base text-gray-700">Garantir os melhores serviços e soluções com conhecimento e tecnologia</p>
-                </div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+                Nossa Missão
+              </h3>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                Oferecer soluções em gestão, finanças, administração e contabilidade com clareza, agilidade e confiança, ajudando empreendedores e empresas a alcançarem seus objetivos de forma simples e eficiente.
+              </p>
+            </div>
+
+            {/* Visão */}
+            <div className="text-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Eye className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
               </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nossos Princípios</h3>
-                  <p className="text-sm sm:text-base text-gray-700">Confiança, qualidade, inovação e relacionamentos duradouros</p>
-                </div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+                Nossa Visão
+              </h3>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                Ser reconhecida como parceira estratégica que simplifica a gestão e a contabilidade, impulsionando o crescimento sustentável dos negócios, unindo transparência, inovação e compromisso com resultados.
+              </p>
+            </div>
+
+            {/* Valores */}
+            <div className="text-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <Award className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
               </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+                Nossos Valores
+              </h3>
+              <div className="text-left space-y-2">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Clareza</strong> – transmitir informações de forma simples e transparente
+                  </p>
                 </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nossa Visão</h3>
-                  <p className="text-sm sm:text-base text-gray-700">Crescer junto com nossos clientes e com toda a comunidade</p>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Honestidade</strong> – agir com ética e integridade em todas as relações
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Agilidade</strong> – oferecer soluções rápidas e eficazes
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Confiança</strong> – construir parcerias sólidas e duradouras
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Compromisso com Resultados</strong> – focar no crescimento dos negócios
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-sm sm:text-base text-gray-700">
+                    <strong>Inovação</strong> – buscar melhorias e novas soluções
+                  </p>
                 </div>
               </div>
             </div>
-          </AnimatedSection>
-        </div>
+
+          </div>
+        </AnimatedSection>
+
+        {/* Seção antiga reformulada */}
+        <AnimatedSection className="mt-16 sm:mt-20 md:mt-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Award className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nosso Negócio</h3>
+                <p className="text-sm sm:text-base text-gray-700">Prestar serviços confiáveis com qualidade, seriedade e segurança</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Compromisso</h3>
+                <p className="text-sm sm:text-base text-gray-700">Garantir os melhores serviços e soluções com conhecimento e tecnologia</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Nossos Princípios</h3>
+                <p className="text-sm sm:text-base text-gray-700">Confiança, qualidade, inovação e relacionamentos duradouros</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Objetivo</h3>
+                <p className="text-sm sm:text-base text-gray-700">Crescer junto com nossos clientes e com toda a comunidade</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
