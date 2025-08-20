@@ -1,6 +1,6 @@
 
 const WhatsAppButton = () => {
-  const phoneNumber = "5433911010";
+  const phoneNumber = "12982147656";
   const message = "Olá! Gostaria de saber mais sobre os serviços contábeis do Escritório De Grandi.";
   
   const handleWhatsAppClick = () => {

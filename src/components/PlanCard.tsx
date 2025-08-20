@@ -1,23 +1,27 @@
 import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
 interface PlanCardProps {
   title: string;
   description: string;
   features: string[];
   className?: string;
 }
+
 const PlanCard = ({
   title,
   description,
   features,
   className
 }: PlanCardProps) => {
-  const phoneNumber = "5433911010";
+  const phoneNumber = "12982147656";
   const message = `Olá! Gostaria de solicitar um orçamento para o plano ${title}.`;
+  
   const handleWhatsAppClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
+
   return <div className={cn("glass-card rounded-xl overflow-hidden transition-all duration-300 border-gray-100 h-full", className)}>
       <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
         <h3 className="text-lg sm:text-xl font-bold text-zinc-950">{title}</h3>
@@ -38,4 +42,5 @@ const PlanCard = ({
       </div>
     </div>;
 };
+
 export default PlanCard;

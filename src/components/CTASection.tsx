@@ -38,7 +38,7 @@ Empresa: ${formData.company}
 *Mensagem:*
 ${formData.message}`;
 
-    const phoneNumber = "5433911010";
+    const phoneNumber = "12982147656";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
