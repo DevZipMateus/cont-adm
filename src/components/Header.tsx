@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Logo from './header/Logo';
 import DesktopNavigation from './header/DesktopNavigation';
@@ -30,7 +29,6 @@ const Header = () => {
     { name: 'Início', href: '/#inicio' },
     { name: 'Sobre', href: '/#sobre' },
     { name: 'Serviços', href: '/#servicos' },
-    { name: 'Depoimentos', href: '/#depoimentos' },
     { name: 'Contato', href: '/#contato' }
   ];
 
