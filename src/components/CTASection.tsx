@@ -1,7 +1,48 @@
 
+import { useState } from 'react';
 import AnimatedSection from './AnimatedSection';
 
+interface CTAFormData {
+  name: string;
+  email: string;
+  company: string;
+  message: string;
+}
+
 const CTASection = () => {
+  const [formData, setFormData] = useState<CTAFormData>({
+    name: '',
+    email: '',
+    company: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const message = `Olá! Gostaria de clareza financeira para minha empresa.
+
+*Dados de contato:*
+Nome: ${formData.name}
+Email: ${formData.email}
+Empresa: ${formData.company}
+
+*Mensagem:*
+${formData.message}`;
+
+    const phoneNumber = "5433911010";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <section id="contato" className="spacing-section">
       <div className="section-container">
@@ -15,13 +56,16 @@ const CTASection = () => {
               Transforme a gestão financeira da sua empresa e comece a tomar decisões baseadas em dados reais.
             </p>
             
-            <form className="contact-form max-w-2xl mx-auto">
+            <form onSubmit={handleSubmit} className="contact-form max-w-2xl mx-auto">
               <div className="form-row">
                 <div>
                   <label htmlFor="name" className="form-label-responsive text-white">Nome</label>
                   <input 
                     type="text" 
-                    id="name" 
+                    id="name"
+                    name="name" 
+                    value={formData.name}
+                    onChange={handleInputChange}
                     className="form-input-responsive border-white/30 focus:ring-white focus:border-white bg-white/10 text-white placeholder-white/60"
                     placeholder="Seu nome completo" 
                   />
@@ -30,7 +74,10 @@ const CTASection = () => {
                   <label htmlFor="email" className="form-label-responsive text-white">E-mail</label>
                   <input 
                     type="email" 
-                    id="email" 
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange} 
                     className="form-input-responsive border-white/30 focus:ring-white focus:border-white bg-white/10 text-white placeholder-white/60"
                     placeholder="seu@email.com" 
                   />
@@ -41,7 +88,10 @@ const CTASection = () => {
                 <label htmlFor="company" className="form-label-responsive text-white">Empresa</label>
                 <input 
                   type="text" 
-                  id="company" 
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
                   className="form-input-responsive border-white/30 focus:ring-white focus:border-white bg-white/10 text-white placeholder-white/60"
                   placeholder="Nome da sua empresa" 
                 />
@@ -50,7 +100,10 @@ const CTASection = () => {
               <div>
                 <label htmlFor="message" className="form-label-responsive text-white">Mensagem</label>
                 <textarea 
-                  id="message" 
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   className="form-input-responsive border-white/30 focus:ring-white focus:border-white bg-white/10 text-white placeholder-white/60 resize-none"
                   placeholder="Como podemos ajudar?" 
                   rows={4}
