@@ -15,7 +15,7 @@ const HeroSection = () => {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 5000); // Troca a cada 5 segundos
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <section 
       id="inicio" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20 md:pt-24" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20" 
       style={{
         background: 'linear-gradient(135deg, hsl(220, 75%, 55%) 0%, hsl(220, 85%, 60%) 20%, hsl(220, 90%, 70%) 40%, hsl(220, 95%, 85%) 70%, #ffffff 100%)'
       }}
@@ -44,20 +44,21 @@ const HeroSection = () => {
             />
           </div>
         ))}
+        {/* Overlay para garantir legibilidade do texto */}
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div className="section-container z-10 w-full px-4 sm:px-6 lg:px-8">
+      <div className="section-container z-10 w-full">
         <AnimatedSection animation="fade-in-up" className="text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 text-white font-sans drop-shadow-lg">
-            CONT ADM <span className="block sm:inline text-white">ASSESSORIA EMPRESARIAL</span>
+          <h1 className="heading-1 mb-6 sm:mb-8 text-white font-sans font-bold drop-shadow-lg">
+            Cont ADM <span className="text-white whitespace-nowrap">Assessoria Empresarial</span>
           </h1>
           
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-3 sm:mb-4 drop-shadow-lg px-2">
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4 drop-shadow-lg">
             Mais do que contabilidade, somos parceiros para o seu crescimento!
           </p>
           
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium drop-shadow-lg px-2">
+          <p className="text-lg sm:text-xl md:text-2xl text-white font-medium drop-shadow-lg">
             A sua empresa no próximo nível contábil e financeiro.
           </p>
         </AnimatedSection>
