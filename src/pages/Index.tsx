@@ -4,7 +4,6 @@ import HeroSection from '@/components/HeroSection';
 import CTAButtons from '@/components/CTAButtons';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
-import ServicesButton from '@/components/ServicesButton';
 import UsefulLinksSection from '@/components/UsefulLinksSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -80,7 +79,6 @@ const Index = () => {
         <CTAButtons />
         <AboutSection />
         <ServicesSection />
-        <ServicesButton />
         <UsefulLinksSection />
       </main>
       <Footer />

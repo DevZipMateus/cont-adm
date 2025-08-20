@@ -1,8 +1,15 @@
-
 import { Calculator, FileText, Building, DollarSign, Shield, Settings } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const ServicesSection = () => {
+  const phoneNumber = "12982147656";
+  
+  const handleWhatsAppClick = () => {
+    const message = "Olá! Gostaria de solicitar um orçamento para os serviços contábeis.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   const services = [
     {
       icon: Calculator,
@@ -112,12 +119,12 @@ const ServicesSection = () => {
         </div>
 
         <AnimatedSection className="text-center mt-12 sm:mt-16 md:mt-20">
-          <a 
-            href="#contato" 
+          <button 
+            onClick={handleWhatsAppClick}
             className="inline-block bg-primary hover:bg-primary/90 text-white font-semibold px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 rounded-lg sm:rounded-xl text-base sm:text-lg md:text-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             Solicitar Orçamento
-          </a>
+          </button>
         </AnimatedSection>
       </div>
     </section>
