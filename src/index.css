@@ -52,76 +52,97 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Typography System */
+/* Typography System - Mobile First */
 .heading-1 {
-  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight;
 }
 
 .heading-2 {
-  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight;
 }
 
 .heading-3 {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight;
 }
 
 .heading-4 {
-  @apply text-xl sm:text-2xl md:text-3xl font-bold leading-tight;
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold leading-tight;
 }
 
 .body-large {
-  @apply text-lg sm:text-xl md:text-2xl leading-relaxed;
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed;
 }
 
 .body-medium {
-  @apply text-base sm:text-lg leading-relaxed;
+  @apply text-sm sm:text-base md:text-lg leading-relaxed;
 }
 
 .body-small {
-  @apply text-sm sm:text-base leading-relaxed;
+  @apply text-xs sm:text-sm md:text-base leading-relaxed;
 }
 
-/* Layout Components */
+/* Layout Components - Enhanced Responsive */
 .section-container {
-  @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  @apply container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-7xl;
 }
 
 .spacing-section {
-  @apply py-16 sm:py-20 md:py-24 lg:py-28;
+  @apply py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28;
 }
 
 .spacing-section-sm {
-  @apply py-12 sm:py-16 md:py-20;
+  @apply py-8 sm:py-12 md:py-16 lg:py-20;
 }
 
 .section-title {
-  @apply heading-2 text-center mb-4 sm:mb-6;
+  @apply heading-2 text-center mb-4 sm:mb-6 lg:mb-8;
 }
 
 .section-subtitle {
-  @apply body-large text-center max-w-4xl mx-auto;
+  @apply body-large text-center max-w-4xl mx-auto mb-8 sm:mb-12 lg:mb-16;
 }
 
-/* Card Components */
+/* Card Components - Enhanced Responsive */
 .card-feature {
-  @apply bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  @apply bg-white rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
 }
 
 .glass-card {
-  @apply bg-white/90 backdrop-blur-sm border border-gray-100/50;
+  @apply bg-white/90 backdrop-blur-sm border border-gray-100/50 rounded-lg sm:rounded-xl;
 }
 
 .testimonial-card {
-  @apply bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  @apply bg-white rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
 }
 
-/* Button Components */
+/* Button Components - Enhanced Responsive */
 .btn-primary {
-  @apply bg-primary hover:bg-primary/90 text-white font-semibold px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-lg sm:rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 text-sm sm:text-base md:text-lg;
+  @apply bg-primary hover:bg-primary/90 text-white font-semibold px-4 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-md sm:rounded-lg lg:rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 text-sm sm:text-base md:text-lg;
 }
 
 .btn-secondary {
-  @apply bg-white hover:bg-gray-50 text-primary border border-primary font-semibold px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 rounded-lg sm:rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 text-sm sm:text-base md:text-lg;
+  @apply bg-white hover:bg-gray-50 text-primary border border-primary font-semibold px-4 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-md sm:rounded-lg lg:rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 text-sm sm:text-base md:text-lg;
+}
+
+/* Form Components - Mobile Responsive */
+.form-label-responsive {
+  @apply block text-sm sm:text-base font-medium mb-1 sm:mb-2;
+}
+
+.form-input-responsive {
+  @apply w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-md focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-sm sm:text-base;
+}
+
+.contact-form {
+  @apply space-y-4 sm:space-y-6;
+}
+
+.form-row {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6;
+}
+
+.mobile-cta {
+  @apply w-full sm:w-auto px-6 sm:px-8 md:px-10 py-3 sm:py-4 min-w-[200px] sm:min-w-[250px];
 }
 
 /* Utility Classes */
@@ -134,22 +155,42 @@ html {
   hyphens: auto;
 }
 
-/* Responsive breakpoints optimization */
-@media (max-width: 640px) {
+/* Enhanced Responsive breakpoints */
+@media (max-width: 480px) {
+  .container {
+    @apply px-3;
+  }
+  
+  .heading-1 {
+    @apply text-2xl leading-tight;
+  }
+  
+  .heading-2 {
+    @apply text-xl leading-tight;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
   .container {
     @apply px-4;
   }
 }
 
-@media (min-width: 640px) and (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 768px) {
   .container {
     @apply px-6;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
     @apply px-8;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    @apply px-12;
   }
 }
 
@@ -160,7 +201,13 @@ img {
 
 /* Smooth scrolling for anchor links */
 [id] {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  [id] {
+    scroll-margin-top: 100px;
+  }
 }
 
 /* Focus states for accessibility */
@@ -177,4 +224,12 @@ a:focus-visible {
 
 .loading {
   animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+/* Mobile touch optimization */
+@media (max-width: 768px) {
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }
