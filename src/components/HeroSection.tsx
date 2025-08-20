@@ -51,7 +51,7 @@ const HeroSection = () => {
       <div className="section-container z-10 w-full">
         <AnimatedSection animation="fade-in-up" className="text-center">
           <h1 className="heading-1 mb-6 sm:mb-8 text-white font-sans font-bold drop-shadow-lg">
-            Cont ADM <span className="text-white whitespace-nowrap">Assessoria Empresarial</span>
+            CONT ADM <span className="text-white whitespace-nowrap">ASSESSORIA EMPRESARIAL</span>
           </h1>
           
           <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4 drop-shadow-lg">
